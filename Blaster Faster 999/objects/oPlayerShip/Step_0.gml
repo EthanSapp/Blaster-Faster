@@ -1,8 +1,10 @@
 var mouse_direction = point_direction(x, y, mouse_x, mouse_y);
 image_angle = mouse_direction;
 
-var thrust = mouse_check_button(mb_left);
+var thrust = mouse_check_button(mb_right);
 image_index = thrust;
+
+
 
 if (thrust){
 	motion_add(image_angle, acceleration);
@@ -18,5 +20,11 @@ if (thrust){
 	friction = frictionAmount;
 }
 
+var fireLaser = mouse_check_button_pressed(mb_left);
+
+if (fireLaser){
+	createRightLaser();
+	createLeftLaser();
+}
 
 direction = mouse_direction;
