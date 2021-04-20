@@ -5,6 +5,8 @@ function bounceOffObject(object, acceleration, maxSpeed){
 	var acceleration_ = argument1;
 	var maxSpeed_ = argument2;
 	
+	if (!instance_exists(object_)) exit;
+	
 	var bounceDirection = point_direction(object_.x, object_.y, x, y);
 	motion_add(bounceDirection, acceleration_);
 	if (speed > maxSpeed_){
