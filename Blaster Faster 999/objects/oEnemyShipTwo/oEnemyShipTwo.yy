@@ -34,6 +34,7 @@
   ],
   "overriddenProperties": [
     {"propertyId":{"name":"armor","path":"objects/oShipParent/oShipParent.yy",},"objectId":{"name":"oShipParent","path":"objects/oShipParent/oShipParent.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
+    {"propertyId":{"name":"maxArmor","path":"objects/oShipParent/oShipParent.yy",},"objectId":{"name":"oShipParent","path":"objects/oShipParent/oShipParent.yy",},"value":"3","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
     "name": "Objects",
