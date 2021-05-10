@@ -1,6 +1,12 @@
 var playerShip = instance_find(oPlayerShip, 0);
 if (playerShip == noone) exit;
 
+alarm[0] = fireRate;
+
+if (!point_in_circle(x, y, 0, 0, room_width, room_height)){
+	exit;
+}
+
 var distance_ = point_distance(x, y, playerShip.x, playerShip.y);
 var direction_ = point_direction(x, y, playerShip.x, playerShip.y);
 
@@ -10,6 +16,3 @@ if (distance_ <= attackRange){
 	laser_.image_angle = direction_;
 	laser_.direction = direction_;
 }
-
-alarm[0] = fireRate;
-
