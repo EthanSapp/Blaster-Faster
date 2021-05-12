@@ -1,7 +1,7 @@
 var mouse_direction = point_direction(x, y, mouse_x, mouse_y);
 image_angle = mouse_direction;
 
-var thrust = mouse_check_button(mb_right);
+var thrust = mouse_check_button(mb_right) || keyboard_check(ord("W"));
 image_index = thrust;
 
 
@@ -22,7 +22,7 @@ if (thrust){
 	friction = frictionAmount;
 }
 
-var fireLaser = mouse_check_button_pressed(mb_left);
+var fireLaser = mouse_check_button_pressed(mb_left) || keyboard_check(ord("F")) || keyboard_check_pressed(vk_space);
 
 if (fireLaser){
 	createRightLaser();

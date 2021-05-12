@@ -3,7 +3,7 @@ if (playerShip == noone) exit;
 
 alarm[0] = fireRate;
 
-if (!point_in_circle(x, y, 0, 0, room_width, room_height)){
+if (!point_in_rectangle(x, y, 0, 0, room_width, room_height)){
 	exit;
 }
 
